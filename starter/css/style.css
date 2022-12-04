@@ -125,7 +125,8 @@ width: 100%;
 
 #main-grid {
   display: grid;
-  
+  gap: 10px;
+  grid-auto-rows: 100px;
   background-color: black;
   color: white;
   border:5px solid pink;
@@ -166,16 +167,40 @@ width: 100%;
 
 .work {
   grid-area: work;
+  display: grid;
   border: solid 2px pink;
   grid-template-columns: 0.5fr 1.75fr 1.75;
-  grid-template-rows: 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
   grid-template-areas: 
-  "about-heading selfie about-content"
+  "project-heading horiseon horiseon"
+  "project-heading  jakes-eatery css-cheatsheet"
+  "project-heading filmnow calculator";
 
-
-  
 }
-
+#project-heading {
+  grid-area:project-heading;
+  border:1px dotted fuchsia;
+}
+#horiseon {
+  grid-area:horiseon;
+  border:1px dotted fuchsia;
+}
+#jakes-eatery {
+  grid-area:jakes-eatery;
+  border:1px dotted fuchsia;
+}
+#css-cheatsheet {
+  grid-area:css-cheatsheet;
+  border:1px dotted fuchsia;
+}
+#filmnow {
+  grid-area:filmnow;
+  border:1px dotted fuchsia;
+}
+#calculator {
+  grid-area:calculator;
+  border: 2px dotted fuchsia;
+}
 .contact {
   grid-area: contact;
   border: solid 2px pink;
