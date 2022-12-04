@@ -175,6 +175,7 @@ width: 100%;
   "project-heading horiseon horiseon"
   "project-heading  jakes-eatery css-cheatsheet"
   "project-heading filmnow calculator";
+  background-color: #FCEFF9;
 
 }
 #project-heading {
@@ -216,16 +217,34 @@ width: 100%;
   border: solid 2px pink;
   
 }
+
+.contact a {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: 220px;
+  margin-top: 100px;
+  
+}
+
+#contact-section{
+  display: flex;
+ text-align: start;
+}
 .fa-linkedin {
   color: #3B5998;
+  font-size: 100px;
 }
 
 .fa-github {
 color: red;
+font-size: 100px;
 }
 
 .fa-twitter {
 color: #55ACEE;
+font-size: 100px;
 }
 
 .fa-house {
