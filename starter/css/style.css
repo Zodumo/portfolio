@@ -142,7 +142,7 @@ width: 100%;
   grid-area: about;
   display: grid;
   border: solid 2px pink;
-  grid-template-columns: 0.5fr 1.75fr 1.75;
+  grid-template-columns: 0.5fr 1.75fr 1.75fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
   "about-heading selfie about-content"
@@ -151,14 +151,14 @@ width: 100%;
 }
 #about-heading{
   grid-area:about-heading;
-  border-right:2px solid pink;
+  border-right:1px solid fuchsia;
 }
 #selfie{
   grid-area:selfie;
-  border:2px solid pink;
+  border:1px solid pink;
   width:200px;
   margin: 1%;
-  height:100%;
+  
 }
 #about-content{
   grid-area:about-content;
@@ -169,7 +169,7 @@ width: 100%;
   grid-area: work;
   display: grid;
   border: solid 2px pink;
-  grid-template-columns: 0.5fr 1.75fr 1.75;
+  grid-template-columns: 0.5fr 1.75fr 1.75fr;
   grid-template-rows: 2fr 1fr 1fr;
   grid-template-areas: 
   "project-heading horiseon horiseon"
@@ -179,27 +179,37 @@ width: 100%;
 }
 #project-heading {
   grid-area:project-heading;
-  border:1px dotted fuchsia;
+  border-right:1px solid fuchsia;
 }
 #horiseon {
   grid-area:horiseon;
-  border:1px dotted fuchsia;
+  border:1px solid fuchsia;
+  background-image: url("/images/horiseon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #jakes-eatery {
   grid-area:jakes-eatery;
-  border:1px dotted fuchsia;
+  border:1px solid fuchsia;
+  background-image: url("/images/jake.png");
 }
 #css-cheatsheet {
   grid-area:css-cheatsheet;
-  border:1px dotted fuchsia;
+  border:1px solid fuchsia;
+  background-image: url("/images/cssCheat.png");
+  background-size: cover;
 }
 #filmnow {
   grid-area:filmnow;
-  border:1px dotted fuchsia;
+  border:1px solid fuchsia;
+  background-image: url("/images/filmnow.png");
 }
 #calculator {
   grid-area:calculator;
-  border: 2px dotted fuchsia;
+  border: 1px solid fuchsia;
+  background-image: url("/images/calculator.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contact {
   grid-area: contact;
