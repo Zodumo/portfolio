@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 :root {
-  --TextColour : #black; 
+  --TextColour : black; 
   --MainBorder : 5px solid black; 
   /* --mainGridBackground: #B47EB3; */
   --mainGridBackground: #ff37; 
@@ -19,6 +19,8 @@ body {
 
 h2 {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight:bolder;
+font-size: xx-large;
 }
 nav {
   display: flex;
@@ -116,26 +118,26 @@ border-bottom: 2px solid var(--TextColour);
 }
 #selfie{
   grid-area:selfie;
-  border:1px solid var(--TextColour);
-  width:200px;
+  border:3px solid fuchsia;
+  width:300px;
   margin: 1%;
-  
 }
 #about-content{
   grid-area:about-content;
 
   
 }
- ul{
+ #about-content li{
   list-style: none;
   text-decoration: none;
+  font-size: 30px;
   
 }
 
 #work {
   grid-area: work;
   display: grid;
-  border: solid 1px var(--TextColour);
+  /* border: solid 1px var(--TextColour); */
   grid-template-columns: 0.5fr 1.75fr 1.75fr;
   grid-template-rows: 2fr 1fr 1fr;
   grid-template-areas: 
@@ -204,7 +206,7 @@ border: var(--MainBorder);
 #contact {
   grid-area: contact;
   border: solid 1px var(--TextColour);
-  background-color: #ea638c;
+  background-color: #ffe4f3;
   border-top: var(--MainBorder);
   margin:0;
 
@@ -224,7 +226,7 @@ border: var(--MainBorder);
 #contact-section{
   display: flex;
  text-align: start;
-  border: solid 1px var(--TextColour);
+  
 }
 .fa-linkedin {
   color: #3B5998;
@@ -232,7 +234,7 @@ border: var(--MainBorder);
 }
 
 .fa-github {
-color: black;
+color: var(--TextColour);
 font-size: 100px;
 }
 
