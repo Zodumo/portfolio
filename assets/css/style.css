@@ -71,7 +71,7 @@ border-bottom: 2px solid var(--TextColour);
 
 #hero-banner{
   
-  background-image: url('/images/giphy.gif');
+  background-image: url('../images/giphy.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -154,30 +154,30 @@ border-bottom: 2px solid var(--TextColour);
 #horiseon {
   grid-area:horiseon;
   border:1px solid var(--TextColour);
-  background-image: url("/images/horiseon.png");
+  background-image: url("../images/horiseon.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 #jakes-eatery {
   grid-area:jakes-eatery;
   border:1px solid var(--TextColour);
-  background-image: url("/images/jake.png");
+  background-image: url("../images/jake.png");
 }
 #css-cheatsheet {
   grid-area:css-cheatsheet;
   border:1px solid var(--TextColour);
-  background-image: url("/images/cssCheat.png");
+  background-image: url("../images/cssCheat.png");
   background-size: cover;
 }
 #filmnow {
   grid-area:filmnow;
   border:1px solid var(--TextColour);
-  background-image: url("/images/filmnow.png");
+  background-image: url("../images/filmnow.png");
 }
 #calculator {
   grid-area:calculator;
   border: 1px solid var(--TextColour);
-  background-image: url("/images/calculator.jpeg");
+  background-image: url("../images/calculator.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
