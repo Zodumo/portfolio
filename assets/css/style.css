@@ -1,34 +1,39 @@
 * {
   box-sizing: border-box;
 }
+/* root selector with all variables used to style the portfolio */
 :root {
   --TextColour : black; 
   --MainBorder : 5px solid black; 
-  /* --mainGridBackground: #B47EB3; */
   --mainGridBackground: #ff37; 
   --mainPadding: 5px;
   --mainMargin:5px;
 }
+/* styling the border of the header */
 header{
   border-bottom:var(--MainBorder)
 }
 
+/* setting the backgrond color of the main Grid (about me and work section) */
 body {
   background-color: var(--mainGridBackground);;
 }
 
+/* styling all the h2 tags of the portfolio */
 h2 {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-weight:bolder;
 font-size: xx-large;
 }
+
+/*  styling the navigation area of the portfolio*/
 nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
 
+/* Styling just the list elements in the navigation are */
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -37,12 +42,14 @@ nav ul li {
 
 }
 
+/* styling the anchor tags of the unordered list in the navigation area */
 nav ul a{
   color: black;
   text-decoration: none;
   font-size: 18px;
 }
 
+/* below sections create and style the hovering effect of the navigation elements */
 nav ul li a::after{
 content: '';
 width: 0;
@@ -52,7 +59,6 @@ position: absolute;
 left: 0;
 bottom: -6px;
 transition: 0.5s;
-
 }
 
 nav ul li a:hover::after { 
@@ -60,17 +66,18 @@ width: 100%;
 border-bottom: 2px solid var(--TextColour);
 }
 
+/* styling of the name of the student in the nav bar */
 .name{
   position: absolute;
   left: 0px;
   color: var(--TextColour);
   height: 90px;
   width: 90px ;
-  
+
 }
 
+/* main styling of the hero banner section of the portfolio */
 #hero-banner{
-  
   background-image: url('../images/giphy.gif');
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,10 +85,9 @@ border-bottom: 2px solid var(--TextColour);
   display: flex;
   height: 30vh;
   width:100wh; 
-
 }
 
-
+/* Creation of the whole main grid area of the portfolio (about me, work, and contact section) */
 #main-grid {
   display: grid;
   gap: 0px;
@@ -95,12 +101,14 @@ border-bottom: 2px solid var(--TextColour);
   "work"
   "contact";
 }
+/* styling of the main grid*/
 .main-items{
   padding: var(--mainPadding);
   margin-top: var(--mainMargin);
   margin-bottom: var(--mainMargin);
 }
 
+/* dividing and setting the grid area of the About Me section of the main grid */
 #about {
   grid-area: about;
   display: grid;
@@ -109,48 +117,48 @@ border-bottom: 2px solid var(--TextColour);
   grid-template-rows: 1fr;
   grid-template-areas: 
   "about-heading selfie about-content";
-  /* background-color: var(--mainGridBackground); */
 }
 
+/* addition and styling of just the 'About Me' heading. Adding a border */
 #about-heading{
   grid-area:about-heading;
   border-right:var(--MainBorder)
 }
+/* addition and styling of the image in the About Me section */
 #selfie{
   grid-area:selfie;
   border:3px solid fuchsia;
   width:300px;
   margin: 1%;
 }
+/* addition and styling of the information about the student */
 #about-content{
   grid-area:about-content;
-
-  
 }
- #about-content li{
+ 
+#about-content li{
   list-style: none;
   text-decoration: none;
   font-size: 30px;
-  
 }
 
+/* Creation of the nested 'work' grid into the main grid where projects will be showcased */
 #work {
   grid-area: work;
   display: grid;
-  /* border: solid 1px var(--TextColour); */
   grid-template-columns: 0.5fr 1.75fr 1.75fr;
   grid-template-rows: 2fr 1fr 1fr;
   grid-template-areas: 
   "project-heading horiseon horiseon"
   "project-heading  jakes-eatery css-cheatsheet"
   "project-heading filmnow calculator";
-  /* background-color : var(--mainGridBackground) */
 }
-
+/* addition and placement of the work heading */
 #project-heading {
   grid-area:project-heading;
   border-right:var(--MainBorder);
 }
+/* Below sections introduce/add the projects and style them according to their placement on the grid */
 #horiseon {
   grid-area:horiseon;
   border:1px solid var(--TextColour);
@@ -182,10 +190,7 @@ border-bottom: 2px solid var(--TextColour);
   background-size: cover;
 }
 
-/* .content-labels{
-  background-size: none;
-  position: relative */
-/* } */
+/* adding and styling the labels of each project  */
 .content-labels{
   display: flex;
   align-items: end;
@@ -203,31 +208,32 @@ background-color: white;
 border: var(--MainBorder);
 }
 
+/* Styling the contact me area of the porfolio  */
 #contact {
   grid-area: contact;
   border: solid 1px var(--TextColour);
   background-color: #ffe4f3;
   border-top: var(--MainBorder);
   margin:0;
-
 }
 
+/* styling the positioning of the icons in the contact me section */
 #contact a {
   display: inline-block;
   position: relative;
   align-items: center;
   justify-content: center;
   margin-left: 220px;
-  margin-top: 100px;
-
-  
+  margin-top: 100px; 
 }
 
+/* ensuring that the contact section is set to flex */
 #contact-section{
   display: flex;
  text-align: start;
-  
 }
+
+/* Styling of the individual icons (links) in the contact me section */
 .fa-linkedin {
   color: #3B5998;
   font-size: 100px;
@@ -243,15 +249,12 @@ color: #55ACEE;
 font-size: 100px;
 }
 
-.fa-house {
-  font-size: 3em;
-}
-
 span {
   color: #d87093;
   size: 20px;
 }
 
+/* styling of body */
 body {
   margin: 0;
   padding: 0;
@@ -259,7 +262,7 @@ body {
   line-height: 1.5;
 }
 
-
+/* setting media queries to ensure that about and work sections are responsive to different screen sizes */
 @media only screen and (max-width: 700px) {
   #about {
     grid-template-columns: 1fr;
@@ -283,6 +286,7 @@ body {
   }
 }
 
+/* basic styling of headers and paragraph */
 h1,
 h2,
 h3,
